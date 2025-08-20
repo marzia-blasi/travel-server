@@ -14,10 +14,14 @@ app.use(express.static("img"));
 
 // 4 router ( da inserire)
 
+app.use("/posts", postsRouter);
+
+/*
 app.get("/", (req, res) => {
   console.log("ciao");
-  res.send("Hello World!");
+  res.send("Hello World!, Marzia!");
 });
+*/
 
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
