@@ -12,7 +12,9 @@ app.use(cors());
 //3 static asset
 app.use(express.static("img"));
 
-// 4 router ( da inserire)
+// 4 router
+
+const postsRouter = require("./Routers/postsRouter.js");
 
 app.use("/posts", postsRouter);
 
