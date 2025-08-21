@@ -16,6 +16,8 @@ router.get("/", postController.index);
 
 // 5 Show
 
+router.get("/:id", postController.show);
+
 // 6 module for export
 
 module.exports = router;
